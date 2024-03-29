@@ -41,9 +41,9 @@ const main = () => {
   // must change render for this to work
   MovieRemovalListener();
 
-  //createBarChart();
-  //createPieChart();
-  //createScatterPlot();
+  createBarChart();
+  createPieChart();
+  createScatterPlot();
 
 };
 

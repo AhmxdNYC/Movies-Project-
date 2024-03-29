@@ -119,16 +119,23 @@ form {
   margin-top: 2%;
   margin-left: 33%;
 }
-.graph {
+#chart-container {
   width: 100%;
+}
+.graph {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px;
+  width: 100%; /* Take full width of its parent */
+  height: 400px; /* Start with a fixed height to ensure visibility */
+  margin: auto; /* Centering the graph if it's smaller than its parent */
 }
 
+
 .graph canvas {
-  width: 50%; /* Adjust this as needed */
-  height: 400px; /* Set a fixed height */
-  margin: auto;
+  max-width: 100%;
+  height: auto; /* Allow the library to control the height */
 }
+
+
